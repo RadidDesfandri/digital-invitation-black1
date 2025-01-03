@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import Cover from "@/app/components/Cover";
 import Invitations from "./Invitations";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const Main = () => {
   const [openInvitation, setOpenInvitation] = useState(false);
@@ -29,14 +30,16 @@ const Main = () => {
     }
   };
 
+  const queryClient = new QueryClient();
+
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <Cover handleClick={handleClick} isOpen={!openInvitation} />
       <Invitations
         isOpen={openInvitation}
         handleAudioOnOff={handleAudioOnOff}
       />
-    </>
+    </QueryClientProvider>
   );
 };
 

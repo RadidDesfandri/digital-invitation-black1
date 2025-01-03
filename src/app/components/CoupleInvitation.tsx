@@ -118,6 +118,29 @@ const CoupleInvitation = () => {
           );
         })}
       </div>
+
+      <h1 className="mt-5 text-center font-corinthia text-5xl">Capture Love</h1>
+      <div className="grid grid-cols-2 place-content-center gap-3 md:grid-cols-4">
+        {[
+          "/pic1.jpg",
+          "/pic2.jpg",
+          "/pic3.jpg",
+          "/pic4.jpg",
+          "/pic5.jpg",
+          "/pic6.jpg",
+        ].map((src, idx) => {
+          return (
+            <Image
+              key={src}
+              src={src}
+              alt={`Pic-${idx + 1}`}
+              width={100}
+              height={100}
+              className="rounded-lg object-cover"
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

@@ -15,6 +15,7 @@ const Input: React.FC<InputProps> = ({
   placeholder,
   setInputValue,
 }) => {
+  
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
   };
