@@ -8,9 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        cormorant: ["var(--font-cormorant)", "serif"],
+        corinthia: ["var(--font-corinthia)", "cursive"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        secondaryBlack: "#131010",
+        primaryBlack: "#1A1A1D",
+        primaryGray: "#3C3D37",
+        primaryPink: "#E195AB",
       },
     },
   },
