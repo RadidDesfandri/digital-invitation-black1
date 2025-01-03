@@ -6,7 +6,6 @@ import GiftandAudio from "./GiftandAudio";
 import HomeInvitation from "./HomeInvitation";
 import BottomBar from "@/components/BottomBar";
 import { useState } from "react";
-import Modal from "@/components/Modal";
 import GiftContent from "./GiftContent";
 import CoupleInvitation from "./CoupleInvitation";
 import AgendaInvitation from "./AgendaInvitation";

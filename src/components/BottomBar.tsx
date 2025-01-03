@@ -9,7 +9,7 @@ const navigationData = [
   { href: "#home", icon: IoHomeOutline },
   { href: "#couple", icon: BsPersonHeart },
   { href: "#agenda", icon: IoCalendar },
-  { href: "#guest", icon: FaBookOpen },
+  { href: "#tamu", icon: FaBookOpen },
 ];
 
 const BottomBar = () => {
