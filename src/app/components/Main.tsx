@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Cover from "@/app/components/Cover";
 import Invitations from "./Invitations";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -9,24 +9,34 @@ const Main = () => {
   const [openInvitation, setOpenInvitation] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const audioRef = useRef(new Audio("music-file.mp3"));
+  const [audioInstance, setAudioInstance] = useState<HTMLAudioElement | null>(
+    null,
+  );
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const audio = new Audio("music-file.mp3");
+      setAudioInstance(audio);
+    }
+  }, []);
 
   const handleClick = () => {
     setOpenInvitation(true);
-    const audio = audioRef.current;
-    audio.play();
-    setIsPlaying(true);
+    if (audioInstance) {
+      audioInstance.play();
+      setIsPlaying(true);
+    }
   };
 
   const handleAudioOnOff = () => {
-    const audio = audioRef.current;
-
-    if (isPlaying) {
-      audio.pause();
-      setIsPlaying(false);
-    } else {
-      audio.play();
-      setIsPlaying(true);
+    if (audioInstance) {
+      if (isPlaying) {
+        audioInstance.pause();
+        setIsPlaying(false);
+      } else {
+        audioInstance.play();
+        setIsPlaying(true);
+      }
     }
   };
 
@@ -34,7 +44,15 @@ const Main = () => {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Cover handleClick={handleClick} isOpen={!openInvitation} />
+      <Suspense
+        fallback={
+          <div className="flex h-full w-full flex-col items-center justify-center text-3xl">
+            Mohon tunggu
+          </div>
+        }
+      >
+        <Cover handleClick={handleClick} isOpen={!openInvitation} />
+      </Suspense>
       <Invitations
         isOpen={openInvitation}
         handleAudioOnOff={handleAudioOnOff}

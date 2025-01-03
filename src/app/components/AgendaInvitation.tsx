@@ -13,7 +13,7 @@ const AgendaInvitation = () => {
       className="relative mt-10 flex w-full flex-col items-center rounded-md bg-secondaryBlack/40 px-5 py-10"
     >
       <h1 className="font-corinthia text-5xl drop-shadow-md">
-        The Day's Agenda
+        The Day`&apos;`s Agenda
       </h1>
       <p className="mt-2 text-center font-cormorant text-sm">
         Agar tidak ketinggalan momen apa pun, berikut jadwal acara hari

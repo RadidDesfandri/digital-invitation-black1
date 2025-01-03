@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Modal from "@/components/Modal";
-import { useRouter } from "next/navigation";
 import { IoHomeOutline, IoWalletOutline } from "react-icons/io5";
 
 interface GiftContentProps {
@@ -11,7 +10,6 @@ interface GiftContentProps {
 }
 
 const GiftContent: React.FC<GiftContentProps> = ({ isOpen, onClose }) => {
-  const router = useRouter();
 
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
