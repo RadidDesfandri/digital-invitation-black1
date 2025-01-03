@@ -1,7 +1,5 @@
+import Main from "@/app/components/Main";
+
 export default function Home() {
-  return (
-    <div className="flex h-full w-full items-center justify-center">
-      Development
-    </div>
-  );
+  return <Main />;
 }
