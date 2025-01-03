@@ -8,6 +8,9 @@ import BottomBar from "@/components/BottomBar";
 import { useState } from "react";
 import Modal from "@/components/Modal";
 import GiftContent from "./GiftContent";
+import CoupleInvitation from "./CoupleInvitation";
+import AgendaInvitation from "./AgendaInvitation";
+import GuestInvitation from "./GuestInvitation";
 
 interface InvitationsProps {
   isOpen: boolean;
@@ -48,7 +51,9 @@ const Invitations: React.FC<InvitationsProps> = ({
       />
       <GiftContent isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <HomeInvitation />
-      
+      <CoupleInvitation />
+      <AgendaInvitation />
+      <GuestInvitation />
     </div>
   );
 };
