@@ -38,7 +38,7 @@ const AgendaInvitation = () => {
                     <p className="font-cormorant text-sm font-bold">2025</p>
                   </div>
                   <div className="w-[90px] border-b border-t border-[#89633E] py-1 text-center font-cormorant font-bold">
-                    09:00 - 10:00
+                    08:00 - selesai
                   </div>
                 </div>
                 <p className="font-cormorant font-bold">

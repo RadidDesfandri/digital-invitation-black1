@@ -20,23 +20,44 @@ const Cover: React.FC<CoverProps> = ({ isOpen, handleClick }) => {
     <section
       id="cover"
       className={clsx(
-        "relative flex h-full w-full flex-col items-center justify-center",
+        "relative flex h-full w-full flex-col items-center justify-center overflow-hidden",
         isOpen ? "block" : "hidden",
       )}
     >
+      <Image
+        src={"/pic4.jpg"}
+        alt="Picpengantin"
+        width={500}
+        height={500}
+        className="absolute left-0 right-0 top-0 -z-0 h-full w-full object-cover opacity-10"
+      />
+      <Image
+        src={"/flowerbottomleft.png"}
+        alt="FlowerBottom"
+        width={110}
+        height={110}
+        className="absolute -bottom-2 -left-2 opacity-60"
+      />
+      <Image
+        src={"/flowerbottomright.png"}
+        alt="FlowerBottom"
+        width={110}
+        height={110}
+        className="absolute -bottom-2 -right-2 opacity-60"
+      />
       <Image
         src={"/flowercircle.png"}
         width={400}
         height={400}
         alt="Flowers"
-        className="absolute opacity-45"
+        className="absolute -z-0"
       />
       <Image
         src={"/flowerpita.png"}
         width={100}
         height={100}
         alt="Flowers"
-        className="absolute top-2 w-28 opacity-45 md:hidden"
+        className="absolute top-2 w-28 md:hidden"
       />
       <div className="flex flex-col items-center">
         <p className="mb-2 font-cormorant">The Wedding Of</p>
@@ -62,24 +83,31 @@ const Cover: React.FC<CoverProps> = ({ isOpen, handleClick }) => {
           />
         </div>
 
-        <p className="mt-4 font-cormorant text-xs">
+        <p className="z-10 mt-4 font-cormorant text-xs">
           ANDA DIUNDANG MENJADI TAMU DI ACARA PERNIKAHAN KAMI
         </p>
-        <p id="guest" className="mt-2 font-corinthia text-3xl tracking-wider">
+        <p
+          id="guest"
+          className="z-10 mt-2 font-corinthia text-3xl tracking-wider"
+        >
           {name ? `${name} & Partner` : "Guest & Partner"}
         </p>
-        <p className="font-cormorant text-sm font-bold md:text-base">JANUARI</p>
-        <div className="flex items-center gap-x-3">
+        <p className="z-10 font-cormorant text-sm font-bold md:text-base">
+          JANUARI
+        </p>
+        <div className="z-10 flex items-center gap-x-3">
           <div className="w-[90px] border-b border-t border-[#89633E] py-1 text-center font-cormorant font-semibold">
             SEL
           </div>
           <p className="font-corinthia text-5xl font-medium md:text-7xl">14</p>
           <div className="w-[90px] border-b border-t border-[#89633E] py-1 text-center font-cormorant font-semibold">
-            09:00
+            08:00 - selesai
           </div>
         </div>
-        <p className="font-cormorant text-sm font-bold md:text-base">2025</p>
-        <div className="mt-4">
+        <p className="z-10 font-cormorant text-sm font-bold md:text-base">
+          2025
+        </p>
+        <div className="z-10 mt-4">
           <Button type="button" onClick={handleClick}>
             <div className="flex items-center gap-x-2">
               <MdInsertInvitation />

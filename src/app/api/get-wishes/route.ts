@@ -3,7 +3,10 @@ import prisma from "@/libs/prismadb";
 
 export async function GET() {
   try {
+    
+    console.log("GETTING DATA");
     const messages = await prisma.messages.findMany();
+    console.log("SUCCESS GETTING DATA", messages);
 
     return NextResponse.json(messages);
   } catch (error) {
