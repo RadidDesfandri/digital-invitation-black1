@@ -9,6 +9,7 @@ import CoupleInvitation from "./CoupleInvitation";
 import AgendaInvitation from "./AgendaInvitation";
 import GuestInvitation from "./GuestInvitation";
 import GiftInvitations from "./GiftInvitations";
+import Footer from "@/components/Footer";
 
 interface InvitationsProps {
   isOpen: boolean;
@@ -40,55 +41,79 @@ const Invitations: React.FC<InvitationsProps> = ({
         height={100}
         className="absolute -right-3 -top-3 w-32 opacity-60"
       />
-      <Image
-        src={"/pic1.jpg"}
-        alt="Picpengantin"
-        width={500}
-        height={500}
-        className="absolute left-0 right-0 top-0 -z-0 h-full max-h-[800px] w-full object-cover opacity-30"
-      />
-      <Image
-        src={"/pic2.jpg"}
-        alt="Picpengantin"
-        width={500}
-        height={500}
-        className="absolute left-0 right-0 top-[800px] -z-0 h-full max-h-[800px] w-full object-cover opacity-30"
-      />
-      <Image
-        src={"/pic3.jpg"}
-        alt="Picpengantin"
-        width={500}
-        height={500}
-        className="absolute left-0 right-0 top-[1600px] -z-0 h-full max-h-[800px] w-full object-cover opacity-30"
-      />
-      <Image
-        src={"/pic4.jpg"}
-        alt="Picpengantin"
-        width={500}
-        height={500}
-        className="absolute left-0 right-0 top-[2400px] -z-0 h-full max-h-[800px] w-full object-cover opacity-30"
-      />
-      <Image
-        src={"/pic5.jpg"}
-        alt="Picpengantin"
-        width={500}
-        height={500}
-        className="absolute left-0 right-0 top-[3200px] -z-0 h-full max-h-[800px] w-full object-cover opacity-30"
-      />
-      <Image
-        src={"/pic6.jpg"}
-        alt="Picpengantin"
-        width={500}
-        height={500}
-        className="absolute left-0 right-0 top-[4000px] -z-0 h-full max-h-[800px] w-full object-cover opacity-30"
-      />
-      <Image
-        src={"/pic1.jpg"}
-        alt="Picpengantin"
-        width={500}
-        height={500}
-        className="absolute left-0 right-0 top-[4800px] -z-0 h-full max-h-[900px] w-full object-cover opacity-30"
-      />
+      <div className="absolute left-0 right-0 top-0 flex h-full w-full flex-col items-center gap-y-[1px]">
+        <Image
+          src={"/pic1.jpg"}
+          alt="Picpengantin"
+          width={500}
+          height={500}
+          className="-z-0 h-full w-full object-cover opacity-30"
+        />
+        <Image
+          src={"/pic2.jpg"}
+          alt="Picpengantin"
+          width={500}
+          height={500}
+          className="-z-0 h-full w-full object-cover opacity-30"
+        />
+        <Image
+          src={"/pic3.jpg"}
+          alt="Picpengantin"
+          width={500}
+          height={500}
+          className="-z-0 h-full w-full object-cover opacity-30"
+        />
+        <Image
+          src={"/pic4.jpg"}
+          alt="Picpengantin"
+          width={500}
+          height={500}
+          className="-z-0 h-full w-full object-cover opacity-30"
+        />
+        <Image
+          src={"/pic5.jpg"}
+          alt="Picpengantin"
+          width={500}
+          height={500}
+          className="-z-0 h-full w-full object-cover opacity-30"
+        />
+        <Image
+          src={"/pic6.jpg"}
+          alt="Picpengantin"
+          width={500}
+          height={500}
+          className="-z-0 h-full w-full object-cover opacity-30"
+        />
+        <Image
+          src={"/pengantin3.jpg"}
+          alt="Picpengantin"
+          width={500}
+          height={500}
+          className="-z-0 h-full w-full object-cover opacity-30"
+        />
+        <Image
+          src={"/pic1.jpg"}
+          alt="Picpengantin"
+          width={500}
+          height={500}
+          className="-z-0 h-full w-full object-cover opacity-30"
+        />
+        <Image
+          src={"/pic2.jpg"}
+          alt="Picpengantin"
+          width={500}
+          height={500}
+          className="-z-0 h-full w-full object-cover opacity-30"
+        />
+        <Image
+          src={"/pic3.jpg"}
+          alt="Picpengantin"
+          width={500}
+          height={500}
+          className="-z-0 h-full w-full object-cover opacity-30"
+        />
+      </div>
+
       <BottomBar />
       <GiftandAudio handleAudioOnOff={handleAudioOnOff} />
       <HomeInvitation />
@@ -96,6 +121,7 @@ const Invitations: React.FC<InvitationsProps> = ({
       <AgendaInvitation />
       <GiftInvitations />
       <GuestInvitation />
+      <Footer />
     </div>
   );
 };
