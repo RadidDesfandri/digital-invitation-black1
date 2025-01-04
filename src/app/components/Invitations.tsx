@@ -47,6 +47,48 @@ const Invitations: React.FC<InvitationsProps> = ({
         height={500}
         className="absolute left-0 right-0 top-0 -z-0 h-full max-h-[800px] w-full object-cover opacity-30"
       />
+      <Image
+        src={"/pic2.jpg"}
+        alt="Picpengantin"
+        width={500}
+        height={500}
+        className="absolute left-0 right-0 top-[800px] -z-0 h-full max-h-[800px] w-full object-cover opacity-30"
+      />
+      <Image
+        src={"/pic3.jpg"}
+        alt="Picpengantin"
+        width={500}
+        height={500}
+        className="absolute left-0 right-0 top-[1600px] -z-0 h-full max-h-[800px] w-full object-cover opacity-30"
+      />
+      <Image
+        src={"/pic4.jpg"}
+        alt="Picpengantin"
+        width={500}
+        height={500}
+        className="absolute left-0 right-0 top-[2400px] -z-0 h-full max-h-[800px] w-full object-cover opacity-30"
+      />
+      <Image
+        src={"/pic5.jpg"}
+        alt="Picpengantin"
+        width={500}
+        height={500}
+        className="absolute left-0 right-0 top-[3200px] -z-0 h-full max-h-[800px] w-full object-cover opacity-30"
+      />
+      <Image
+        src={"/pic6.jpg"}
+        alt="Picpengantin"
+        width={500}
+        height={500}
+        className="absolute left-0 right-0 top-[4000px] -z-0 h-full max-h-[800px] w-full object-cover opacity-30"
+      />
+      <Image
+        src={"/pic1.jpg"}
+        alt="Picpengantin"
+        width={500}
+        height={500}
+        className="absolute left-0 right-0 top-[4800px] -z-0 h-full max-h-[900px] w-full object-cover opacity-30"
+      />
       <BottomBar />
       <GiftandAudio handleAudioOnOff={handleAudioOnOff} />
       <HomeInvitation />
