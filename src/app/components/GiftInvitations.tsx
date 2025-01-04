@@ -1,18 +1,12 @@
-"use client";
-
 import Link from "next/link";
-import Modal from "@/components/Modal";
 import { IoHomeOutline, IoWalletOutline } from "react-icons/io5";
 
-interface GiftContentProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
-
-const GiftContent: React.FC<GiftContentProps> = ({ isOpen, onClose }) => {
-
+const GiftInvitations = () => {
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <section
+      id="gift"
+      className="relative mt-10 flex w-full flex-col items-center rounded-md bg-secondaryBlack/40 px-5 py-10"
+    >
       <h1 className="font-corinthia text-5xl">Wedding Gifts</h1>
       <div className="flex w-full flex-col items-center gap-x-8 gap-y-6 md:flex-row md:items-start">
         {/* Bagian 1 start */}
@@ -26,7 +20,7 @@ const GiftContent: React.FC<GiftContentProps> = ({ isOpen, onClose }) => {
             Pilih metode untuk mengirim hadiah Anda secara online
           </p>
 
-          <div className="mt-4 flex w-full items-center gap-x-4 rounded-3xl bg-[url('/bgcardfamily.png')] px-6 py-5">
+          <div className="mt-4 flex w-full items-center gap-x-4 rounded-3xl bg-[url('/bgcardfamily.png')] px-6 py-5 text-black">
             <div className="flex w-1/2 flex-col items-center">
               <div className="rounded-full bg-primaryPink p-3">
                 <IoWalletOutline className="text-white" />
@@ -59,7 +53,7 @@ const GiftContent: React.FC<GiftContentProps> = ({ isOpen, onClose }) => {
             Kirim hadiah Anda ke alamat berikut
           </p>
 
-          <div className="mt-4 flex w-full flex-col items-center gap-x-4 rounded-3xl bg-[url('/bgcardfamily.png')] px-6 py-5">
+          <div className="mt-4 flex w-full flex-col items-center gap-x-4 rounded-3xl bg-[url('/bgcardfamily.png')] px-6 py-5 text-black">
             <div className="rounded-full bg-primaryPink p-3">
               <IoHomeOutline className="text-white" />
             </div>
@@ -79,8 +73,8 @@ const GiftContent: React.FC<GiftContentProps> = ({ isOpen, onClose }) => {
         </div>
         {/* Bagian 2 end */}
       </div>
-    </Modal>
+    </section>
   );
 };
 
-export default GiftContent;
+export default GiftInvitations;
