@@ -1,6 +1,7 @@
 import Image from "next/image";
 import FormWishes from "./FormWishes";
 import ListWishes from "./ListWishes";
+import AnimatedOpacity from "@/components/Motions/AnimatedOpacity";
 
 export default function GuestInvitation() {
   return (
@@ -16,69 +17,78 @@ export default function GuestInvitation() {
           className="absolute -left-24 -top-10 md:-left-9 md:top-0"
           src="/butterfly.png"
         />
-        <h1 className="font-corinthia text-5xl md:text-6xl">Guest Book</h1>
+        <AnimatedOpacity duration={1}>
+          <h1 className="font-corinthia text-5xl md:text-6xl">Guest Book</h1>
+        </AnimatedOpacity>
       </div>
 
-      <h2 className="max-w-lg text-center font-cormorant text-sm italic">
-        Kami mengucapkan rasa syukur dan terima kasih atas waktu dan kehadiran
-        Anda dalam momen bahagia kami. Kehadiran Andamenjadi doa dan restu yang
-        berarti bagi perjalanan hidup kami ke depan.
-      </h2>
+      <AnimatedOpacity duration={1.5}>
+        <h2 className="max-w-lg text-center font-cormorant text-sm italic">
+          Kami mengucapkan rasa syukur dan terima kasih atas waktu dan kehadiran
+          Anda dalam momen bahagia kami. Kehadiran Andamenjadi doa dan restu
+          yang berarti bagi perjalanan hidup kami ke depan.
+        </h2>
+      </AnimatedOpacity>
 
-      <div className="relative mt-6 flex max-h-96 w-full flex-col items-center rounded-3xl bg-[url(/bgcover.png)] px-5 py-6">
-        <Image
-          width={40}
-          height={40}
-          src="/leftbutterfly.png"
-          alt="Butterfly"
-          className="absolute left-1 top-1"
-        />
-        <Image
-          width={40}
-          height={40}
-          src="/leftbutterfly.png"
-          alt="Butterfly"
-          className="absolute bottom-1 right-1"
-        />
-        <Image
-          width={40}
-          height={40}
-          src="/butterflypoint45.png"
-          alt="Butterfly"
-          className="absolute right-2 top-24 w-8 -rotate-12"
-        />
-        <Image
-          width={70}
-          height={70}
-          alt="Flower"
-          src="/flowertulip.png"
-          className="absolute bottom-0 left-0"
-        />
+      <AnimatedOpacity duration={2}>
+        <div className="relative mt-6 flex max-h-96 w-full flex-col items-center rounded-3xl bg-[url(/bgcover.png)] px-5 py-6">
+          <Image
+            width={40}
+            height={40}
+            src="/leftbutterfly.png"
+            alt="Butterfly"
+            className="absolute left-1 top-1"
+          />
+          <Image
+            width={40}
+            height={40}
+            src="/leftbutterfly.png"
+            alt="Butterfly"
+            className="absolute bottom-1 right-1"
+          />
+          <Image
+            width={40}
+            height={40}
+            src="/butterflypoint45.png"
+            alt="Butterfly"
+            className="absolute right-2 top-24 w-8 -rotate-12"
+          />
+          <Image
+            width={70}
+            height={70}
+            alt="Flower"
+            src="/flowertulip.png"
+            className="absolute bottom-0 left-0"
+          />
 
-        <FormWishes />
-      </div>
+          <FormWishes />
+        </div>
+      </AnimatedOpacity>
 
       {/* Card sec start*/}
-      <div className="relative mt-12 flex w-full flex-col items-center rounded-3xl bg-[url('/bgcover.png')] px-5 py-6">
-        <Image
-          width={40}
-          height={40}
-          src="/leftbutterfly.png"
-          alt="Butterfly"
-          className="absolute left-1 top-1"
-        />
-        <Image
-          width={40}
-          height={40}
-          src="/centerbutterfly.png"
-          alt="Butterfly"
-          className="absolute right-2 top-12"
-        />
-        <h1 className="gradient-text pb-2 pl-2 font-corinthia text-4xl text-black">
-          Messages & Wishes
-        </h1>
-        <ListWishes />
-      </div>
+      <AnimatedOpacity duration={2.3}>
+        <div className="relative mt-12 flex w-full flex-col items-center rounded-3xl bg-[url('/bgcover.png')] px-5 py-6">
+          <Image
+            width={40}
+            height={40}
+            src="/leftbutterfly.png"
+            alt="Butterfly"
+            className="absolute left-1 top-1"
+          />
+          <Image
+            width={40}
+            height={40}
+            src="/centerbutterfly.png"
+            alt="Butterfly"
+            className="absolute right-2 top-12"
+          />
+          <h1 className="gradient-text pb-2 pl-2 font-corinthia text-4xl text-black">
+            Messages & Wishes
+          </h1>
+          <ListWishes />
+        </div>
+      </AnimatedOpacity>
+
       {/* Card sec end */}
     </div>
   );
