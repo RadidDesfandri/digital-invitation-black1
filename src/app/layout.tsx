@@ -14,9 +14,32 @@ const corinthia = Corinthia({
 });
 
 export const metadata: Metadata = {
-  title: "Digital Invitation",
+  title: "Ronal-Fadilla",
   description:
-    "Wedding digital invitation adalah undangan pernikahan berbasis digital yang dirancang untuk menyampaikan informasi acara pernikahan secara praktis, modern, dan ramah lingkungan. Menggunakan media seperti website, aplikasi, atau file digital, undangan ini memungkinkan pasangan pengantin untuk berbagi detail pernikahan dengan lebih fleksibel.",
+    "Pernikahan adalah ikatan lahir dan batin antara seorang laki-laki dan perempuan untuk membentuk keluarga yang bahagia dan sejahtera. Pernikahan memiliki banyak makna.",
+  openGraph: {
+    title: "Ronal-Fadilla",
+    description:
+      "Pernikahan adalah ikatan lahir dan batin antara seorang laki-laki dan perempuan untuk membentuk keluarga yang bahagia dan sejahtera. Pernikahan memiliki banyak makna.",
+    siteName: "Ronal-Fadilla Wedding",
+    images: [
+      {
+        url: "/pic7.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ronal dan Fadilla Wedding",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ronal-Fadilla",
+    description:
+      "Pernikahan adalah ikatan lahir dan batin antara seorang laki-laki dan perempuan untuk membentuk keluarga yang bahagia dan sejahtera. Pernikahan memiliki banyak makna",
+    images: ["/pic7.jpg"],
+  },
 };
 
 export default function RootLayout({
