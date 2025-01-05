@@ -21,7 +21,7 @@ const Cover: React.FC<CoverProps> = ({ isOpen, handleClick }) => {
     <section
       id="cover"
       className={clsx(
-        "relative flex z-[100] h-full w-full flex-col items-center justify-center overflow-hidden",
+        "relative z-[100] flex h-full w-full flex-col items-center justify-center overflow-hidden",
         isOpen ? "block" : "hidden",
       )}
     >
@@ -31,7 +31,7 @@ const Cover: React.FC<CoverProps> = ({ isOpen, handleClick }) => {
           alt="Picpengantin"
           width={500}
           height={500}
-          className="absolute  left-0 right-0 top-0 -z-0 h-full w-full object-cover opacity-50"
+          className="absolute left-0 right-0 top-0 -z-0 h-full w-full object-cover opacity-50"
         />
       </AnimatedOpacity>
       <div className="flex flex-col items-center">
@@ -78,7 +78,7 @@ const Cover: React.FC<CoverProps> = ({ isOpen, handleClick }) => {
             id="guest"
             className="z-10 mt-2 font-corinthia text-3xl tracking-wider"
           >
-            {name ? `${name} & Partner` : "Guest & Partner"}
+            {name ? `${name}` : "Guest & Partner"}
           </p>
         </AnimatedOpacity>
 
