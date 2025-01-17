@@ -56,8 +56,8 @@ const HomeInvitation = () => {
           <Image
             src="/pic10.jpg"
             alt="pengantin"
-            width={100}
-            height={100}
+            width={700}
+            height={700}
             className="w-64 rounded-full"
           />
         </div>
