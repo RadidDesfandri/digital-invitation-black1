@@ -16,7 +16,7 @@ export default {
         secondaryBlack: "#131010",
         primaryBlack: "#1A1A1D",
         primaryGray: "#3C3D37",
-        primaryPink: "#E195AB",
+        primaryPink: "#A385A3",
       },
     },
   },

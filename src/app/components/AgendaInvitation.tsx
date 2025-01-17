@@ -3,8 +3,8 @@ import Link from "next/link";
 import React from "react";
 
 const dataCard = [
-  { header: "Akad Nikah", tanggal: "13", hari: "Sen" },
-  { header: "Resepsi Pernikahan", tanggal: "14", hari: "Sel" },
+  // { header: "Akad Nikah", tanggal: "13", hari: "Sen" },
+  { header: "Resepsi Pernikahan", tanggal: "22", hari: "Sab" },
 ];
 
 const AgendaInvitation = () => {
@@ -50,7 +50,7 @@ const AgendaInvitation = () => {
                     </div>
                   </div>
                   <p className="font-cormorant font-bold">
-                    Rumah Mempelai Wanita
+                    Rumah Mempelai Pria
                   </p>
                   <p className="w-full max-w-64 text-center font-cormorant">
                     Jr. Koto Tuo, Nag. Siguntur ,Kec. Sitiung, Kab. Dharmasraya,
