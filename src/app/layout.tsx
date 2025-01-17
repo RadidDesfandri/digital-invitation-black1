@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Ronal-Fadilla",
     description:
       "Pernikahan adalah ikatan lahir dan batin antara seorang laki-laki dan perempuan untuk membentuk keluarga yang bahagia dan sejahtera. Pernikahan memiliki banyak makna",
-    images: ["/pic7.jpg"],
+    images: ["/pic9.jpg"],
   },
 };
 
