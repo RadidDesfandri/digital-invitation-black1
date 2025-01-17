@@ -11,7 +11,7 @@ const HomeInvitation = () => {
     minutes: 0,
     seconds: 0,
   });
-  const targetDate = "2025-01-14T01:00:00.418Z";
+  const targetDate = "2025-01-20T01:00:00.418Z";
 
   useEffect(() => {
     const target = new Date(targetDate).getTime();
@@ -54,7 +54,7 @@ const HomeInvitation = () => {
             className="absolute -top-4 opacity-70"
           />
           <Image
-            src="/pengantin3.jpg"
+            src="/pic10.jpg"
             alt="pengantin"
             width={100}
             height={100}

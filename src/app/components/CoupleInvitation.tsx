@@ -143,11 +143,15 @@ const CoupleInvitation = () => {
       <div className="mt-2 grid grid-cols-2 place-content-center gap-3 md:grid-cols-4">
         {[
           "/pic1.jpg",
+          "/pic8.jpg",
+          "/pic9.jpg",
           "/pic2.jpg",
-          "/pic3.jpg",
-          "/pic4.jpg",
           "/pic5.jpg",
+          "/pic10.jpg",
+          "/pic11.jpg",
+          "/pic3.jpg",
           "/pic6.jpg",
+          "/pic12.jpg",
         ].map((src, idx) => {
           const genap = idx % 2 === 0;
           return (

@@ -35,8 +35,8 @@ const GiftInvitations = () => {
                   <IoWalletOutline className="text-white" />
                 </div>
                 <p className="font-cormorant font-bold">Nagari</p>
-                <p className="font-cormorant">14030213070194</p>
-                <p className="font-cormorant">a.n. Agustia Fadilla</p>
+                <p className="font-cormorant">14050213006383</p>
+                <p className="font-cormorant">a.n. Ronal Saputra</p>
               </div>
               <div className="h-[130px] w-[1px] bg-[#89633E]"></div>
               <div className="flex w-1/2 flex-col items-center">
@@ -72,7 +72,7 @@ const GiftInvitations = () => {
               <div className="rounded-full bg-primaryPink p-3">
                 <IoHomeOutline className="text-white" />
               </div>
-              <p className="font-cormorant font-bold">Agustia Fadilla</p>
+              <p className="font-cormorant font-bold">Ronal Saputra</p>
               <p className="text-center font-cormorant">
                 Jr. Koto Tuo, Nag. Siguntur ,Kec. Sitiung, Kab. Dharmasraya,
                 Sumatera Barat

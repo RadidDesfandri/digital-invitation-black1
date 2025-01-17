@@ -45,7 +45,7 @@ const Invitations: React.FC<InvitationsProps> = ({
       <div className="absolute left-0 right-0 top-0 flex h-full w-full flex-col items-center">
         <AnimatedOpacity duration={2}>
           <Image
-            src={"/pic1.jpg"}
+            src={"/pic8.jpg"}
             alt="Picpengantin"
             width={500}
             height={500}
@@ -55,7 +55,16 @@ const Invitations: React.FC<InvitationsProps> = ({
 
         <AnimatedOpacity duration={2} threshold={0}>
           <Image
-            src={"/pic2.jpg"}
+            src={"/pic10.jpg"}
+            alt="Picpenantin"
+            width={500}
+            height={500}
+            className="-z-0 h-full w-full object-cover opacity-30"
+          />
+        </AnimatedOpacity>
+        <AnimatedOpacity duration={2} threshold={0}>
+          <Image
+            src={"/pic9.jpg"}
             alt="Picpengantin"
             width={500}
             height={500}
@@ -64,7 +73,7 @@ const Invitations: React.FC<InvitationsProps> = ({
         </AnimatedOpacity>
         <AnimatedOpacity duration={2} threshold={0}>
           <Image
-            src={"/pic3.jpg"}
+            src={"/pic11.jpg"}
             alt="Picpengantin"
             width={500}
             height={500}
@@ -73,7 +82,7 @@ const Invitations: React.FC<InvitationsProps> = ({
         </AnimatedOpacity>
         <AnimatedOpacity duration={2} threshold={0}>
           <Image
-            src={"/pic4.jpg"}
+            src={"/pic12.jpg"}
             alt="Picpengantin"
             width={500}
             height={500}
@@ -82,7 +91,7 @@ const Invitations: React.FC<InvitationsProps> = ({
         </AnimatedOpacity>
         <AnimatedOpacity duration={2} threshold={0}>
           <Image
-            src={"/pic5.jpg"}
+            src={"/pic8.jpg"}
             alt="Picpengantin"
             width={500}
             height={500}
@@ -91,7 +100,7 @@ const Invitations: React.FC<InvitationsProps> = ({
         </AnimatedOpacity>
         <AnimatedOpacity duration={2} threshold={0}>
           <Image
-            src={"/pic6.jpg"}
+            src={"/pic9.jpg"}
             alt="Picpengantin"
             width={500}
             height={500}
@@ -100,7 +109,7 @@ const Invitations: React.FC<InvitationsProps> = ({
         </AnimatedOpacity>
         <AnimatedOpacity duration={2} threshold={0}>
           <Image
-            src={"/pengantin3.jpg"}
+            src={"/pic10.jpg"}
             alt="Picpengantin"
             width={500}
             height={500}
@@ -109,7 +118,7 @@ const Invitations: React.FC<InvitationsProps> = ({
         </AnimatedOpacity>
         <AnimatedOpacity duration={2} threshold={0}>
           <Image
-            src={"/pic1.jpg"}
+            src={"/pic12.jpg"}
             alt="Picpengantin"
             width={500}
             height={500}
@@ -118,7 +127,7 @@ const Invitations: React.FC<InvitationsProps> = ({
         </AnimatedOpacity>
         <AnimatedOpacity duration={2} threshold={0}>
           <Image
-            src={"/pic2.jpg"}
+            src={"/pic11.jpg"}
             alt="Picpengantin"
             width={500}
             height={500}
@@ -127,20 +136,11 @@ const Invitations: React.FC<InvitationsProps> = ({
         </AnimatedOpacity>
         <AnimatedOpacity duration={2} threshold={0}>
           <Image
-            src={"/pic3.jpg"}
+            src={"/pic8.jpg"}
             alt="Picpengantin"
             width={500}
             height={500}
-            className="-z-0 h-full w-full object-cover opacity-30"
-          />
-        </AnimatedOpacity>
-        <AnimatedOpacity duration={2} threshold={0}>
-          <Image
-            src={"/pic7.jpg"}
-            alt="Picpengantin"
-            width={500}
-            height={500}
-            className="-z-0 h-full max-h-72 w-full object-cover object-top opacity-30"
+            className="-z-0 h-full min-h-72 w-full object-cover object-top opacity-30"
           />
         </AnimatedOpacity>
       </div>

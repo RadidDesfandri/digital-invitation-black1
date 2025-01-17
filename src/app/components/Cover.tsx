@@ -27,7 +27,7 @@ const Cover: React.FC<CoverProps> = ({ isOpen, handleClick }) => {
     >
       <AnimatedOpacity duration={1}>
         <Image
-          src={"/pic7.jpg"}
+          src={"/pic9.jpg"}
           alt="Picpengantin"
           width={500}
           height={500}
@@ -36,7 +36,7 @@ const Cover: React.FC<CoverProps> = ({ isOpen, handleClick }) => {
       </AnimatedOpacity>
       <div className="flex flex-col items-center">
         <AnimatedOpacity duration={1}>
-          <p className="mb-2 font-cormorant">The Wedding Of</p>
+          <p className="z-0 mb-2 font-cormorant">The Wedding Of</p>
         </AnimatedOpacity>
 
         <AnimatedOpacity duration={1.5}>
@@ -52,7 +52,7 @@ const Cover: React.FC<CoverProps> = ({ isOpen, handleClick }) => {
           </div>
         </AnimatedOpacity>
         <AnimatedOpacity duration={2}>
-          <p className="font-corinthia text-7xl font-semibold">&</p>
+          <p className="z-0 font-corinthia text-7xl font-semibold">&</p>
         </AnimatedOpacity>
         <AnimatedOpacity duration={2.5}>
           <div className="relative">
@@ -88,10 +88,10 @@ const Cover: React.FC<CoverProps> = ({ isOpen, handleClick }) => {
           </p>
           <div className="z-10 flex items-center gap-x-3">
             <div className="w-[90px] border-b-2 border-t-2 border-[#89633E] py-1 text-center font-cormorant font-semibold">
-              SEL
+              RAB
             </div>
             <p className="font-corinthia text-5xl font-medium md:text-7xl">
-              14
+              22
             </p>
             <div className="w-[90px] border-b-2 border-t-2 border-[#89633E] py-1 text-center font-cormorant font-semibold">
               08:00 - selesai
