@@ -4,7 +4,7 @@ import React from "react";
 
 const dataCard = [
   // { header: "Akad Nikah", tanggal: "13", hari: "Sen" },
-  { header: "Resepsi Pernikahan", tanggal: "22", hari: "Sab" },
+  { header: "Resepsi Pernikahan", tanggal: "22", hari: "Rab" },
 ];
 
 const AgendaInvitation = () => {
@@ -59,7 +59,7 @@ const AgendaInvitation = () => {
                 </div>
                 <div className="flex w-full justify-center">
                   <Link
-                    href="https://maps.app.goo.gl/mqo42w9jcaocgsSH8"
+                    href="https://maps.app.goo.gl/iWcP88FEWxv1EDYn8"
                     target="_blank"
                     className="mt-6 flex w-fit items-center justify-center gap-x-1 rounded-lg bg-primaryPink px-6 py-2 font-cormorant text-white shadow-md transition-all duration-300 hover:opacity-55 active:scale-95 disabled:opacity-50"
                   >
@@ -68,7 +68,7 @@ const AgendaInvitation = () => {
                 </div>
 
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.2326400002553!2d101.5697910749652!3d-0.9817404990087836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwNTgnNTQuMyJTIDEwMcKwMzQnMjAuNSJF!5e0!3m2!1sen!2sid!4v1735711610621!5m2!1sen!2sid"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1989.9197782576477!2d101.58648263029643!3d-0.9748258589891051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2b925bed8b9b39%3A0x48d2e9013cc71d0a!2sMasjid%20Baitul%20Mukminin!5e1!3m2!1sen!2sid!4v1737291863412!5m2!1sen!2sid"
                   className="mt-4 w-full rounded-lg"
                   loading="lazy"
                 ></iframe>
