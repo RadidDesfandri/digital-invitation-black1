@@ -78,7 +78,7 @@ const GiftInvitations = () => {
                 Sumatera Barat
               </p>
               <Link
-                href={"https://maps.app.goo.gl/mqo42w9jcaocgsSH8"}
+                href={"https://maps.app.goo.gl/iWcP88FEWxv1EDYn8"}
                 target="_blank"
                 className="mt-4 rounded-lg bg-primaryPink px-6 py-2 font-cormorant text-white shadow-md transition-all duration-300 hover:opacity-55 active:scale-95 disabled:opacity-50"
               >
