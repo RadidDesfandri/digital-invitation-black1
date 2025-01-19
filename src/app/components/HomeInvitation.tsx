@@ -11,7 +11,7 @@ const HomeInvitation = () => {
     minutes: 0,
     seconds: 0,
   });
-  const targetDate = "2025-01-20T01:00:00.418Z";
+  const targetDate = "2025-01-22T01:00:00.418Z";
 
   useEffect(() => {
     const target = new Date(targetDate).getTime();
